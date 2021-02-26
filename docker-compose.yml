@@ -1,0 +1,9 @@
+version: '2'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    labels:
+      lagoon.type: node-persistent
+      lagoon.persistent: /app

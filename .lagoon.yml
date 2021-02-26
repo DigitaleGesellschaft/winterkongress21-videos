@@ -1,0 +1,10 @@
+docker-compose-yaml: docker-compose.yml
+
+environments:
+  main:
+    routes:
+    - nginx:
+      - winterkongress.ch:
+          insecure: Allow
+      - www.winterkongress.ch:
+          insecure: Allow
